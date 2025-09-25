@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- link for icons website -->
+  <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/aboutus.css">
+</head>
+<body>
+
+<!-- Header -->
+  <header role="banner">
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <div class="logo">🤟 SignEase</div>
+      <ul class="nav-links">
+        <li><a  href="index.html">Home</a></li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a  href="quiz.html">Quiz</a></li>
+        <li><a class="active" href="aboutus.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+    </nav>
+  </header>
+<!-- main -->
+    <main id="main">
+        <section id="introsec">
+            <div id="introdiv" >
+
+            </div>
+            <div class="intro-box">
+                <h1>Welcome to SignEase 🤟</h1>
+                <p><strong>We make communication easier for the Deaf community</strong>  
+                through technology, accessibility, and inclusivity.</p>
+            </div>
+        </section>
+
+        <section class="what-we-offer">
+            <h2>What We Offer</h2>
+            <div class="offer-cards">
+                <div class="offer-card">
+                <img src="/assets/images/offer1.png">
+                <h3>Accessible Learning</h3>
+                <p>Video and written materials with captions, sign language, and visual aids to support all learning styles.</p>
+                </div>
+                <div class="offer-card">
+                <img src="/assets/images/offer2.png">
+                <h3>Community & Support</h3>
+                <p>Peer forums, mentors, and support networks to share experiences and grow together.</p>
+                </div>
+                <div class="offer-card">
+                <img src="/assets/images/offer3.png">
+                <h3>Resources & Tools</h3>
+                <p>Guides, templates, and downloadable content designed for clarity and ease of use.</p>
+                </div>
+                <div class="offer-card">
+                <img src="/assets/images/offer4.png">
+                <h3>Events & Workshops</h3>
+                <p>Workshops, webinars, and live events with sign interpretation and captioning for full participation.</p>
+                </div>
+            </div>
+            </section>
+
+            
+        <!-- ==== Our Team Section ==== -->
+        <section id="team" class="team-section">
+        <h2>Meet Our Team</h2>
+        <p class="team-intro">We are educators, designers, and community members dedicated to creating accessible, visual-first experiences.</p>
+        
+        <div class="team-grid">
+
+            <!-- Aisha Khan -->
+            <div class="team-member">
+            <h3>Aisha Khan</h3>
+            <p>Founder & Sign-Language Educator</p>
+
+            <!-- Hidden checkbox + button -->
+            <input type="checkbox" id="video1" class="toggle">
+            <label for="video1" class="btn">Watch Intro</label>
+
+            <!-- Video -->
+            <div class="video-box">
+                <video controls muted>
+                <source src="/assets/images/introduction.mp4" type="video/mp4">
+                 <track src="/vtt/intro.vtt" kind="subtitles"   srclang="en" label="English" default>
+                </video>
+            </div>
+            </div>
+
+            <!-- Dr. Musa Bilal -->
+            <div class="team-member">
+            <h3>Dr. Musa Bilal</h3>
+            <p>Accessibility Researcher</p>
+
+            <input type="checkbox" id="video2" class="toggle">
+            <label for="video2" class="btn">Watch Intro</label>
+
+            <div class="video-box">
+                <video controls muted>
+                <source src="/assets/images/introduction.mp4" type="video/mp4">
+                 <track src="/vtt/musa_intro.vtt" kind="subtitles" srclang="en" label="English" default>
+                </video>
+            </div>
+            </div>
+
+            <!-- Sarah R. -->
+            <div class="team-member">
+            <h3>Sarah R.</h3>
+            <p>Community Manager</p>
+
+            <input type="checkbox" id="video3" class="toggle">
+            <label for="video3" class="btn">Watch Intro</label>
+
+            <div class="video-box">
+                <video controls muted>
+                <source src="assets/images/introduction.mp4" type="video/mp4">
+                 <track src="/vtt/sarah_intro.vtt" kind="subtitles" srclang="en" label="English" default>
+                </video>
+            </div>
+            </div>
+
+        </div>
+        </section>
+
+<!-- ==== Vertical Rate Us Button & Popup ==== -->
+<input type="checkbox" id="rating-popup" class="rating-toggle">
+<label for="rating-popup" class="vertical-rate-btn">⭐ Rate Us</label>
+
+<div class="rating-popup">
+  <div class="rating-content">
+    <h3>We value your feedback</h3>
+    <p>Please rate your experience:</p>
+
+    <!-- Star Rating -->
+    <div class="stars">
+      <input type="radio" id="star5" name="rating" value="5">
+      <label for="star5" aria-label="5 stars">★</label>
+      <input type="radio" id="star4" name="rating" value="4">
+      <label for="star4" aria-label="4 stars">★</label>
+      <input type="radio" id="star3" name="rating" value="3">
+      <label for="star3" aria-label="3 stars">★</label>
+      <input type="radio" id="star2" name="rating" value="2">
+      <label for="star2" aria-label="2 stars">★</label>
+      <input type="radio" id="star1" name="rating" value="1">
+      <label for="star1" aria-label="1 star">★</label>
+    </div>
+
+    <!-- Close Button -->
+    <label for="rating-popup" class="close-btn">Close</label>
+  </div>
+</div>
+<article>
+  <section>
+    <h2>History of Sign Language</h2>
+    <p>Sign language has been used for centuries...</p>
+  </section>
+</article>
+
+<div class="highlight">Did you know? ASL is the 3rd most used language in the US.</div>
+<p>Inline example: <span class="note">important</span> word here.</p>
+
+<div class="override">
+  <p>This text should turn red due to CSS specificity.</p>
+</div>
+
+<details>
+  <summary>Learn more about ASL</summary>
+  <p>ASL is widely used in North America...</p>
+</details>
+
+
+</main>
+
+<!--footer-->
+  <footer> 
+      <div class="container">
+      <div class="footer-content">
+        <h3>Contact Us</h3>
+        <p>📧 Email: signease@gmail.com</p>
+        <p>📞 Phone: +92 342561779</p>
+        <p>📍 Address: PUCIT Lahore</p>
+      </div>
+
+      <div class="footer-content">
+        <h3>Quick Links</h3>
+        <ul class="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="learn.html">Learn with us</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-content">
+        <h3>Follow Us</h3>
+        <ul class="social-icons">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  <div class="bottom-bar">
+      <p>&copy; 2025 SignEase · All Rights Reserved</p>
+    </div>
+  </footer>
+<script src="/js/dark-mode.js"></script>
+</body>
+</html>
