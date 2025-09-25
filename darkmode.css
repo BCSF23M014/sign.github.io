@@ -1,0 +1,202 @@
+/* ========== Dark Mode Base ========== */
+body {
+  background-color: #121f18; /* dark greenish black */
+  color: #d1e8d1; /* light green for readability */
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+.flashcards-section h2 ,p {
+    color: #c4ded1; /* bright green for the section heading */
+}
+.videos-section h2 {
+    color: #80ffc2; /* bright green for the section heading */
+}
+.audio-section h2 {
+    color: #80ffc2; /* bright green for the section heading */
+}
+.hero h1{
+  color: #deede6;
+}
+.about h2 
+{
+  color: #deede6; /* bright green for main headings */
+  text-align: center;
+  text-shadow: 1px 1px 3px #0c2d23; /* subtle depth */
+}
+.about p 
+{
+  color: #6ead90; /* bright green for main headings */
+
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0c2d23; /* keep dark green */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+.nav-links a {
+  color: #d1e8d1; /* light green text */
+}
+
+.nav-links a:hover {
+  background-color: #145a41; /* slightly brighter green on hover */
+}
+
+.nav-links a.active {
+  background-color: #198754; /* accent green */
+}
+
+/* Buttons */
+.btn, .hero-content .btn, .toggle-label {
+  background-color: #145a41;
+  color: #ffffff;
+}
+
+.btn:hover, .hero-content .btn:hover, .toggle-label:hover {
+  background-color: #1e7a59;
+}
+/* Cards & Containers */
+.contact-container,
+.quiz-card,
+.audio-section,
+.video-card {
+  background-color: #1c3227; /* dark green card background */
+  border: 1px solid #145a41;
+  color: #d1e8d1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+.contact-container h1{
+  color: white;
+}
+.intro-box h1 {
+  color:white;
+}
+.intro-box p {
+  color:white;
+}
+/* Hero Section */
+.hero {
+  background-color: #16291f; /* dark greenish */
+}
+.quiz-section h1{
+  color:white;
+}
+.hero-content h2,
+.hero-content p {
+  color: #e5f3ec; /* bright green text */
+}
+
+/* Flashcards */
+.flashcard {
+  background-color: #99cda3; /* original green but darker */
+  color: #d1e8d1;
+}
+
+.flashcard-front, .flashcard-back {
+  background-color: #16461f;
+  color: #143214;
+}
+
+/* Video Section */
+.video-card video {
+  border: 2px solid #145a41;
+}
+
+/* Footer */
+footer, .bottom-bar {
+  background-color: #0c2d23;
+}
+
+.footer-content p, .list a, .social-icons i, .bottom-bar p {
+  color: #d1e8d1;
+}
+
+.list li::before {
+  background: #80ffc2;
+}
+
+.list a:hover {
+  color: #80ffc2;
+}
+
+.social-icons i:hover {
+  color: #80ffc2;
+}
+
+/* Input fields */
+input, textarea, select, button {
+  background-color: #1c3227;
+  color: #d1e8d1;
+  border: 1px solid #145a41;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: 2px solid #80ffc2;
+  box-shadow: 0 0 5px rgba(128, 255, 194, 0.5);
+}
+
+/* Transcripts / Toggle Sections */
+.transcript {
+  background-color: #1c3227;
+  color: #d1e8d1;
+  border: 1px solid #145a41;
+}
+
+/* Hover & Animation tweaks for visibility */
+.feature-card:hover,
+.contact-container:hover,
+.index-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+}
+
+.flashcard-back p,
+.flashcard-front p
+{
+color: rgb(189, 239, 197);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .navbar {
+    background-color: #0c2d23;
+  }
+}
+.quiz-card h2{
+  color:#198754;
+}
+.quiz-card label {
+  background-color: #145a41; /* darkish green */
+  color: #ffffff; /* text color */
+  border: 1px solid #80ffc2; /* light green border */
+}
+.quiz-card label:hover {
+  background-color: #198754; /* lighter green on hover */
+}
+
+/* Radio / Checkbox Inputs */
+.quiz-card input[type="radio"],
+.quiz-card input[type="checkbox"] {
+  accent-color: #80ffc2; /* modern way to color inputs (green) */
+}
+.team-section{
+  background-color: #253f25;
+}
+.team-section h2 {
+  color: #2d712d;
+}
+.team-section p{
+  color: #f4faf4;
+}
+.team-member p{
+  color:rgb(18, 48, 18);}
+
+.team-member h3{
+  color:rgb(18, 48, 18);
+}
+
+
+.offer-card h3 {
+  color: #145a41;  /* medium green */
+}
