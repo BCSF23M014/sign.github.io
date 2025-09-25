@@ -1,0 +1,524 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #E6F4EA; /* Light mint green */
+  color: #0B3D2E; /* Dark green */
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.hero{
+  text-align: center;
+  padding: 40px 20px;
+   font-size: 1.3rem;
+  line-height: 1.6;
+}
+/* General heading styling */
+.heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  color:rgb(33, 72, 33);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Subtle hover effect for all headings */
+.heading:hover {
+  color: #225f1a;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-40px); }
+  50% { opacity: 0.5; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Slide-up effect */
+@keyframes slideUp {
+  0% { opacity: 0; transform: translateY(60px); }
+  60% { opacity: 0.6; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Zoom-in effect */
+@keyframes zoomIn {
+  0% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 0.5; transform: scale(1.1); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+/* Bounce-in effect */
+@keyframes bounceIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.2); opacity: 1; }
+  75% { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+
+/* =========================
+   CLASS ANIMATIONS
+   ========================= */
+
+/* Longer and smoother animations */
+.fade-in {
+  animation: fadeIn 2.5s ease-in-out forwards;
+}
+
+.slide-up {
+  animation: slideUp 2.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.zoom-in {
+  animation: zoomIn 2.2s ease-out forwards;
+}
+
+.typing-effect {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #0077ff;
+  width: 0;
+  animation:
+    typing 3.5s steps(30, end) forwards,
+    blink 1s step-end infinite;
+}
+
+.bounce-in {
+  animation: bounceIn 2.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #1F4D36;
+}
+
+
+.flashcard-front p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0B3D2E;
+  margin-top: 8px;
+}
+
+
+/* Flashcards Section */
+.flashcards-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.flashcards-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.flashcards-section p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #2B5E43;
+  
+}
+
+/* Flashcards Grid */
+.flashcards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  column-gap: 30px; /* Horizontal spacing */
+  row-gap: 60px;    /* Vertical spacing between top and bottom rows */
+ 
+  padding: 0 20px;
+  justify-items: center;
+}
+
+
+
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.flashcard:hover .flashcard-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front and Back Faces */
+.flashcard-front,
+.flashcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flashcard-front img {
+  height: 200px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.flashcard-front p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.flashcard-back {
+  transform: rotateY(180deg);
+  font-size: 1rem;
+  color: #0B3D2E;
+  padding: 20px;
+}
+
+.flashcard img {
+  max-width: 100%;
+  max-height: 180px; /* adjust based on card size */
+  object-fit: contain; /* keeps image ratio */
+  display: block;
+  margin: 0 auto;
+}
+.flashcards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   column-gap: 30px; /* space between cards left and right */
+  row-gap: 60px;    /* increased vertical space between rows */
+  justify-items: center;
+  margin-top: 40px;
+}
+/* Flashcard Styling */
+
+.flashcard {
+  width: 220px;
+  height: 280px;
+  padding: 10px;
+  background: #205d2b;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Videos Section */
+.videos-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.videos-section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.videos-grid {
+  display: flex;
+  gap: 20px; /* space between videos */
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  justify-content: center; /* center videos */
+}
+
+.video-card {
+  flex: 1 1 500px; /* grow/shrink, min width 500px */
+  max-width: 560px;
+  text-align: center;
+}
+
+
+.video-card video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.video-card p {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+footer {
+  background: #0c2d23;
+  padding-top: 50px;
+}
+
+.container {
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Better for responsiveness */
+}
+
+.footer-content {
+  width: 33.3%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #e5ece9;
+}
+
+.footer-content p {
+  margin: 8px 0;
+  color: #e0e0e0;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  padding: 7px 0;
+  position: relative;
+}
+
+/* Hover underline effect */
+.list li::before {
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background: #80ffc2;
+  /* Green underline */
+  transition-duration: 0.4s;
+}
+
+.list li:hover::before {
+  width: 70px;
+}
+
+.list a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.list a:hover {
+  color: #80ffc2;
+  /* Green hover */
+}
+
+/* Social Icons */
+.social-icons {
+  text-align: center;
+}
+
+.social-icons li {
+  color: white;
+  display: inline-block;
+  padding: 5px;
+}
+
+.social-icons i {
+  color: white;
+  padding: 20px;
+  font-size: 50px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: #80ffc2;
+  /* Green on hover */
+  transform: scale(1.2);
+}
+
+/* Bottom bar */
+.bottom-bar {
+  background: #145a41;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
+}
+
+.bottom-bar p {
+  color: white;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* ==== Responsive Design ==== */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .contact-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+/* ==== Navbar  ==== */
+.navbar {
+  position: fixed;       /* Fixes navbar at top */
+  top: 0;                /* Align to top of viewport */
+  left: 0;               /* Align left */
+  width: 100%;           /* Full width */
+  z-index: 1000;         /* Stay above other content */
+  background-color: #0c2d23; 
+  overflow: hidden;
+   justify-content: space-evenly;
+  display: flex;
+  padding: 0 2rem;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* optional shadow */
+}
+
+
+.logo {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 14px 16px;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  /* spacing between links */
+  margin-right: 2rem;
+  /* moves them a bit left */
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #145a41;
+}
+
+.nav-links a.active {
+  background-color: #198754;
+}
+
+.audio-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #e0f2f1;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.audio-section h2 {
+  color: #145a41;
+  text-align: center;
+}
+
+.audio-section audio {
+  width: 100%;
+  margin: 1rem 0;
+  outline: none;
+  border-radius: 6px;
+}
+
+/* Toggle Label */
+.toggle-label {
+  display: block;
+  margin: 0.5rem auto;
+  padding: 0.6rem 1.2rem;
+  background-color: #145a41;
+  color: #fff;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.toggle-label:hover {
+  background-color: #1e7a59;
+}
+
+/* Hide checkbox */
+.transcript-toggle {
+  display: none;
+}
+
+/* Transcript hidden by default */
+.transcript {
+  display: none;
+  margin-top: 1rem;
+  background-color: #ffffff;
+  padding: 0.8rem;
+  border-radius: 6px;
+  max-height: 200px;
+  overflow-y: auto;
+  color: #0f3d2f;
+}
+
+/* Show transcript when checkbox is checked */
+.transcript-toggle:checked ~ .transcript {
+  display: block;
+}
+
+/* Change label text when checked using CSS pseudo-element */
+.transcript-toggle:checked + .toggle-label::after {
+  content: " (Hide Transcript)";
+}
+
+.toggle-label::after {
+  content: " ";
+}
+ button {
+  padding: 0.7rem;
+  border: 1px solid #0c2d23;
+  border-radius: 8px;
+  font-size: 1rem;
+}
